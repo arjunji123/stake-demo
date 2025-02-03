@@ -41,7 +41,7 @@ const FifthComponent = ({ data }) => {
                     <p className="white font-medium mb-8">
                         {data && data.paragraphs[0]}
                     </p>
-                    <button className="md:max-w-fit bg-yellow-600 hover:bg-yellow-700 flex justify-center text-black font-semibold py-3 px-6 rounded">
+                    <button className="md:max-w-fit bg-[#99FF37] hover:bg-[#99FF37] flex justify-center text-black font-semibold py-3 px-6 rounded">
                         Become a VIP
                     </button>
                 </div>

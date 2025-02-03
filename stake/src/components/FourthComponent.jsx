@@ -180,7 +180,7 @@ const FourthComponent = ({ data }) => {
                     <p className="font-medium mb-8">
                         {data && data.paragraphs[0]}
                     </p>
-                    <button className="bg-yellow-500 hover:bg-yellow-600 text-black py-3 px-6 rounded-md text-lg font-semibold">
+                    <button className="bg-[#99FF37] hover:bg-[#99FF37] text-black py-3 px-6 rounded-md text-lg font-semibold">
                         Learn more
                     </button>
                 </div>
