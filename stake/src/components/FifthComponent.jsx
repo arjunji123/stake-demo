@@ -31,7 +31,7 @@ const FifthComponent = ({ data }) => {
         },
     ]
     return (
-        <section className="bg-grey-800">
+        <section className="bg-[#001136]">
             <div className="flex flex-col md:flex-row text-white m-auto px-4 py-8 md:px-8 md:py-12 md:gap-16 gap-6 max-w-[1200px]">
                 {/* Main Heading Section */}
                 <div className="flex flex-col flex-1 justify-center mx-auto mb-12 text-left">

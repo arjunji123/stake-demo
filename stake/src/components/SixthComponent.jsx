@@ -6,7 +6,7 @@ import bgImage2 from '../assets/sponsorship-bg-blue.DxmQOpu9.svg'
 const SixthComponent = ({ data }) => {
     console.log(data)
     return (
-        <div className="bg-grey-600 py-10 max-md:px-5 max-lg:px-10">
+        <div className="bg-[#000A1E] py-10 max-md:px-5 max-lg:px-10">
             <h2 className="text-[28px] lg:text-4xl font-bold mb-4 leading-normal lg:px-40 lg:text-center">
                 {data && data.headings[0]}
             </h2>

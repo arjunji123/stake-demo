@@ -3,8 +3,8 @@ import bannerBg from '../assets/stake.BFmdy97X.svg'
 const Banner = ({ data }) => {
     return (
         <section
-            className="bg-contain bg-no-repeat bg-top w-full bg-grey-800 py-12 px-4 md:px-8 "
-            style={{ backgroundImage: `url(${bannerBg})` }}
+            className="bg-contain bg-no-repeat bg-top w-full bg-[#000A1E] py-12 px-4 md:px-8 "
+            // style={{ backgroundImage: `url(${bannerBg})` }}
         >
             {' '}
             {/* Add overflow-auto here */}

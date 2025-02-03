@@ -10,7 +10,7 @@ import ufcLogo from '../assets/slider-images/ufc.svg'
 
 const Slider = () => {
     return (
-        <section className="w-full py-7 md:py-9 lg:px-8 m-auto flex flex-col content-center lg:mt-0 lg:mb-10 bg-grey-500">
+        <section className="w-full py-7 md:py-9 lg:px-8 m-auto flex flex-col content-center lg:mt-0 lg:mb-10 bg-[#001136]">
             <div className="slider  overflow-hidden w-full max-w-[1200px] relative m-auto">
                 <ul className="slider-track flex items-center gap-[76px] w-[2694px]">
                     <li>

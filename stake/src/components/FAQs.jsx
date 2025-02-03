@@ -8,7 +8,7 @@ const FaqItem = ({ data, isOpen = false }) => {
         setMenuOpen(!menuOpen)
     }
     return (
-        <div className="w-full bg-grey-500 rounded">
+        <div className="w-full bg-[#142c5d] rounded">
             <div
                 className={`cursor-pointer flex text-sm font-bold items-center justify-between px-5 py-3`}
                 onClick={toggleOpen}
@@ -45,7 +45,7 @@ const FaqItem = ({ data, isOpen = false }) => {
 
 const FAQs = () => {
     return (
-        <div className="px-5 md:px-10 lg:px-40 flex flex-col md:flex-row bg-grey-600 py-16 gap-5 md:gap-10 lg:gap-20 items-center">
+        <div className="px-5 md:px-10 lg:px-40 flex flex-col md:flex-row bg-[#000A1E] py-16 gap-5 md:gap-10 lg:gap-20 items-center">
             <div className="flex-1">
                 <h2 className="text-[28px] lg:text-4xl font-bold mb-4 leading-normal">
                     Still Have Questions ?

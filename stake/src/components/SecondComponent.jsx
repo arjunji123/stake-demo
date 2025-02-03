@@ -7,7 +7,7 @@ import liveStreamsIcon from '../assets/icons/live-streams-icon.svg'
 const SecondComponent = ({ data }) => {
     console.log(data)
     return (
-        <section className="bg-grey-800 px-4 md:px-8 md:pt-4 pt-8 relative">
+        <section className="bg-[#000A1E] px-4 md:px-8 md:pt-4 pt-8 relative">
             {/* Wrapper for Content */}
             <div className="mt-5 banner3 overflow-hidden md:flex flex-col md:flex-row max-md:p-5 max-lg:px-10 max-lg:py-5 lg:pl-24 bg-cover">
                 {/* Left Section: Text and Categories */}

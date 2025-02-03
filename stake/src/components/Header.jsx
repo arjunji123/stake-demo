@@ -1,13 +1,13 @@
 import React from 'react'
-
+import logo from '../assets/logo.jpg'
 const Header = ({ toggleSidebar }) => {
     return (
         <header
-            className="flex fixed top-0 w-full z-10 items-center bg-gray-800 p-2.5"
+            className="flex fixed top-0 w-full z-10 items-center bg-[#001236] p-2.5"
             style={{ boxShadow: '0 2px 4px 0 rgba(0, 0, 0, 0.1)' }}
         >
             <div className="logo flex items-center ml-16">
-                <svg
+                {/* <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                     viewBox="0 0 396.11 197.92"
@@ -29,7 +29,14 @@ const Header = ({ toggleSidebar }) => {
                             d="M360.26,161.74c16.91-.06,30-11.19,32.4-14.81,3.1-4.71-3.6-11.82-5.73-11.7-5.34,5.11-10.92,11.29-23.45,11.33-14.75.06-11.41-16.17-11.41-16.17s28.39,3.67,39.8-16.74c3.65-6.53,3.8-15.56,2.33-19.45s-9.73-11.09-22.87-10c-16.14,1.36-36.48,18.19-40.95,38.4C326.79,138.86,333.58,161.84,360.26,161.74Zm18-68.1c2.66-.09,2.42,4.29,1.71,8.87-1,6.21-9.53,22-25.81,21.38C355.29,114.7,367.4,94,378.29,93.64Z"
                         />
                     </g>
-                </svg>
+                </svg> */}
+                <img
+                    src={logo}
+                    alt=""
+                    className="svelte-md2ju7"
+                    width="70"
+                    height="32"
+                />
             </div>
 
             <div className="ml-auto mr-9">

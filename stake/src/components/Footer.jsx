@@ -22,7 +22,7 @@ const FooterColumn = ({ heading, listItems }) => {
         setMenuOpen(!menuOpen)
     }
     return (
-        <div className="text-left max-md:py-3 max-md:px-4 max-md:bg-grey-500 rounded-md">
+        <div className="text-left max-md:py-3 max-md:px-4 max-md:bg-[#0a1b3d] rounded-md">
             <p
                 className="font-semibold text-base md:mb-2 max-md:flex items-center"
                 onClick={openSubmenu}
@@ -30,7 +30,7 @@ const FooterColumn = ({ heading, listItems }) => {
                 {heading}
             </p>
             {menuOpen && (
-                <hr className="w-full h-[2px] bg-grey-500 border-none md:hidden" />
+                <hr className="w-full h-[2px] bg-[#4d82f4] border-none md:hidden" />
             )}
             <ul
                 className={`text-sm font-medium max-md:mt-5 space-y-4 md:space-y-2 text-grey-200 ${
@@ -49,7 +49,7 @@ const FooterColumn = ({ heading, listItems }) => {
 
 const Footer = () => {
     return (
-        <footer className="bg-grey-800 text-white py-8 text-center px-5 md:p-8 lg:px-32 lg:py-12 font-monteserrat">
+        <footer className="bg-[#001136] text-white py-8 text-center px-5 md:p-8 lg:px-32 lg:py-12 font-monteserrat">
             <div className="flex max-md:flex-col max-md:gap-5 justify-between text-left text-grey-200">
                 <div>
                     <img src={stakeLogo} alt="" className="mb-3" />
@@ -401,5 +401,5 @@ const Footer = () => {
         </footer>
     )
 }
-
+//ab
 export default Footer

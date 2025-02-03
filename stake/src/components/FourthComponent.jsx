@@ -149,7 +149,7 @@ const FourthComponent = ({ data }) => {
     const images = data?.images || []
 
     return (
-        <div className="bg-grey-600 h-110 flex items-center justify-center pt-10 md:py-20 px-5 md:px-8">
+        <div className="bg-[#000A1E] h-110 flex items-center justify-center pt-10 md:py-20 px-5 md:px-8">
             {/* Container */}
             <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
                 {/* Left Section - Image Slider */}

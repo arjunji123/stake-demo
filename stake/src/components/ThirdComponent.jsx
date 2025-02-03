@@ -160,11 +160,16 @@ const ThirdComponent = () => {
     }
 
     return (
-        <section className="px-5 md:px-8 py-8 md:py-12">
+        <section className="px-5 md:px-8 py-8 md:py-12 bg-[#001136]">
             <div className="m-auto flex flex-col md:gap-6 gap-5 max-w-[1200px]">
-                <h2 className="font-bold line-height-normal lg:text-center text-[28px] lg:text-4xl text-white lg:px-8 mt-10 lg:my-10">
-                    Enjoy the best odds with up to 99.5% return-to-player games
+                <h2 className="font-bold line-height-normal lg:text-center text-[28px] lg:text-4xl text-white lg:px-8 mt-10">
+                    Why Choose JIJOO.com?
                 </h2>
+                <p className="mb-10">
+                    Discover why thousands of players trust us for their gaming
+                    needs. Our betting and casino platform offers unmatched
+                    variety, security, and rewards for all players.
+                </p>
                 <div className="flex flex-row md:gap-[64px]">
                     <div className="flex flex-col gap-3">
                         {rtpItems.map((item, index) => (

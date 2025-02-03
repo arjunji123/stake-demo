@@ -1,21 +1,21 @@
 /* Custom styles for .section-wrapper */
 .section-wrapper {
     display: flex;
-    background-color: #1a2c38; /* No quotes needed */
+    background-color: #000A1E; /* No quotes needed */
     border-radius: 4px; /* No quotes needed */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* No quotes needed */
     flex-direction: column;
     max-width: 100%;
 }
 body {
-    background-color: #1a2c38; /* Full page background color */
+    background-color: #000A1E; /* Full page background color */
     color: #ffffff; /* Text color (optional for better readability) */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif; /* Optional: set font style */
 }
 .color {
-    background-color: #1a2c38; /* Matches global background */
+    background-color: #000A1E; /* Matches global background */
 }
 /* Section Wrapper CSS */
 .section-wrapper {
@@ -330,7 +330,7 @@ element.style {
     width: 100%; /* Optional: Adjust width as needed */
 }
 body {
-    background-color: #1a202c; /* Tailwind's bg-gray-900 equivalent */
+    background-color: #001236; /* Tailwind's bg-gray-900 equivalent */
     min-height: 100vh;
     margin: 0;
     padding: 0;

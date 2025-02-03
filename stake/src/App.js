@@ -50,7 +50,7 @@ const App = () => {
 
     return (
         <>
-            <div className="flex flex-col-reverse md:flex-row bg-grey-800 text-white h-screen overflow-hidden pb-16 md:pb-0">
+            <div className="flex flex-col-reverse md:flex-row bg-[#000A1E] text-white h-screen overflow-hidden pb-16 md:pb-0">
                 {/* Sidebar */}
                 <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
                 {/* Main Content */}

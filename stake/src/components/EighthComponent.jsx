@@ -2,7 +2,7 @@ import React from 'react'
 
 const EighthComponent = ({ data }) => {
     return (
-        <div className="px-5 md:px-10 lg:px-40 flex max-md:flex-col-reverse py-16 gap-10 lg:gap-20">
+        <div className="px-5 md:px-10 lg:px-40 flex max-md:flex-col-reverse py-16 gap-10 lg:gap-20 bg-[#001136]">
             <div className="lg:w-1/2 flex justify-end">
                 <img src={data?.images[0]} alt="" className="shrink-0" />
             </div>
