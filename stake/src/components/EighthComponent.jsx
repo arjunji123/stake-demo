@@ -20,5 +20,5 @@ const EighthComponent = ({ data }) => {
         </div>
     )
 }
-
+//s
 export default EighthComponent
