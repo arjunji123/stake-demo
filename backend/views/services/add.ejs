@@ -1,0 +1,187 @@
+
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title"><%= title %></h4>
+                            
+                            
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form method="post" action="/admin/<%= module_slug %>/add"  enctype="multipart/form-data">
+                                        <div class="row">
+                                            <div class="col-lg-12 float-left">
+                                                <div class="mb-3">
+                                                    <label for="simpleinput" class="form-label">Title</label>
+                                                    <input type="text" id="simpleinput" name="title" class="form-control" value="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    <div class="row">
+                                        <div class="col-lg-6 float-left">
+                                            <div class="mb-3">
+                                                <label for="simpleinput" class="form-label">Image</label>
+                                                <span>
+                                                    <button id="add-image-button" type="button">add</button>
+                                                </span>
+                                                <div id="image-inputs" class="d-flex flex-wrap">
+                                                    <input type="file" id="simpleinput" name="images" class="form-control" multiple>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 float-left">
+                                            <div id="heading-inputs" class="mb-3">
+                                                <label for="simpleinput" class="form-label">Heading</label>
+                                                <button id="add-heading-button" type="button">add</button>
+                                                <textarea class="form-control" name="heading"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 float-left">
+                                            <div id="paragraph-inputs" class="mb-3">
+                                                <label for="simpleinput" class="form-label">Paragraph</label>
+                                                <button id="add-paragraph-button" type="button">add</button>
+                                                <textarea class="form-control" name="paragraph"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 float-left">
+                                            <div class="mb-3">
+                                                <label for="simpleinput" class="form-label">Status</label>
+                                                <select class="form-control" name="status">
+                                                    <option value="1">Active</option>
+                                                    <option value="0">Inactive</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4 float-left" ><button class="btn btn-primary" type="submit">Submit</button></div>
+                                        
+                                    </div>
+                                    </form>
+                                </div> <!-- end col -->
+
+                              
+                            </div>
+                            <!-- end row-->
+
+                        </div> <!-- end card-body -->
+                    </div> <!-- end card -->
+                </div><!-- end col -->
+            </div>
+
+<script>
+
+    const maxImageInputs= 5;
+    let imageInputCount =1;
+    const imageInputs = document.getElementById("image-inputs");
+    const addImageButton = document.getElementById("add-image-button");
+
+    addImageButton.addEventListener("click", (e)=>{
+        if(imageInputCount >= maxImageInputs) return
+        e.preventDefault();
+
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("d-flex", "align-items-center", "mt-3", "w-100", "gap-2");
+
+        const newInputElement = document.createElement("input");
+        newInputElement.classList.add("form-control");
+        newInputElement.type = "file";
+        newInputElement.name = "images";
+        newInputElement.id = "simpleinput";
+        newInputElement.setAttribute("multiple", true);
+
+        const closeButton = document.createElement("button");
+        closeButton.classList.add("h-100")
+        closeButton.type = "button"
+        closeButton.innerHTML = `<i class="fe-x-square h-100"></i>`
+
+        closeButton.addEventListener("click", () => {
+            wrapper.remove();
+            imageInputCount--;
+        });
+
+        wrapper.appendChild(newInputElement);
+        wrapper.appendChild(closeButton);
+        imageInputs.appendChild(wrapper);
+
+        imageInputCount++;
+    })
+
+    const maxHeadingInputs = 5;
+    let headingInputCount =1
+    const headingInputs = document.getElementById("heading-inputs");
+    const addHeadingInputs = document.getElementById("add-heading-button");
+
+    addHeadingInputs.addEventListener("click", (e)=>{
+        if(headingInputCount >= maxHeadingInputs){
+            return;
+        }
+        e.preventDefault();
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("d-flex", "align-items-center", "mt-3", "w-100", "gap-2");
+
+        const newInputElement = document.createElement("textarea");
+        newInputElement.classList.add("mt-3", "form-control");
+        newInputElement.name = "heading";
+
+        const closeButton = document.createElement("button");
+        closeButton.classList.add("h-100")
+        closeButton.type = "button"
+        closeButton.innerHTML = `<i class="fe-x-square h-100"></i>`
+
+        closeButton.addEventListener("click", () => {
+            wrapper.remove();
+            headingInputCount--;
+        });
+
+        wrapper.appendChild(newInputElement);
+        wrapper.appendChild(closeButton);
+        headingInputs.appendChild(wrapper);
+
+        headingInputCount++;
+    })
+
+    const maxParagraphsInputs = 5;
+    let paragraphInputCount = 1;
+    const paragraphInputs = document.getElementById("paragraph-inputs");
+    const addParagraphInputs = document.getElementById("add-paragraph-button");
+
+    addParagraphInputs.addEventListener("click", (e) => {
+        if(paragraphInputCount >= maxHeadingInputs){
+            return;
+        }
+        e.preventDefault();
+
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("d-flex", "align-items-center", "mt-3", "w-100", "gap-2");
+
+        const newInputElement = document.createElement("textarea");
+        newInputElement.classList.add("mt-3", "form-control");
+        newInputElement.name = "paragraph";
+        
+        const closeButton = document.createElement("button");
+        closeButton.classList.add("h-100")
+        closeButton.type = "button"
+        closeButton.innerHTML = `<i class="fe-x-square h-100"></i>`
+
+        closeButton.addEventListener("click", () => {
+            wrapper.remove();
+            headingInputCount--;
+        });
+
+        wrapper.appendChild(newInputElement);
+        wrapper.appendChild(closeButton);
+        paragraphInputs.appendChild(wrapper);
+    });
+
+</script>
+           

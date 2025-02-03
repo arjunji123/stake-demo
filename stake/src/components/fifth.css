@@ -1,0 +1,29 @@
+/* Container for the slider */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust the height as necessary */
+}
+
+/* Wrapper that will slide horizontally */
+.slider-wrapper {
+  display: flex;
+  transition: transform 1s ease-in-out; /* Smooth horizontal sliding */
+}
+
+/* Each individual image slide */
+.slider-item {
+  flex-shrink: 0;
+  width: 100%; /* Each image takes the full width of the container */
+  height: 100%; /* Full height of the container */
+  background-size: cover;
+  background-position: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-[#262b32] {
+  background-color: #262b32;
+}

@@ -1,0 +1,75 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="header-title">Preview Blog - <%= blog.title %>
+                </h4>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Title</label>
+                                    <input type="text" class="form-control" value="<%= blog.title %>" readOnly>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Images -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="d-flex flex-wrap gap-3 mb-3">
+                                    <% if (blog.images.length> 0) { %>
+                                        <% blog.images.forEach((image, index)=> { %>
+                                            <div>
+                                                <img src="<%- '/uploads/' + module_slug + '/' + image %>"
+                                                    style="width:80px" />
+                                            </div>
+                                            <% }); %>
+                                                <% } else { %>
+                                                    <p>No images available</p>
+                                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Headings -->
+                        <% if (blog.headings.length> 0) { %>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div id="heading-inputs" class="mb-3">
+                                        <label class="form-label">Heading</label>
+                                        <% blog.headings.forEach((heading, index)=> { %>
+                                            <textarea class="form-control" name="heading"><%= heading %></textarea>
+                                            <% }); %>
+                                    </div>
+                                </div>
+                            </div>
+                            <% } else { %>
+                                <p>No headings available</p>
+                                <% } %>
+
+                                    <!-- Paragraphs -->
+                                    <% if (blog.paragraphs.length> 0) { %>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div id="paragraph-inputs" class="mb-3">
+                                                    <label class="form-label">Paragraph</label>
+                                                    <% blog.paragraphs.forEach((paragraph, index)=> { %>
+                                                        <textarea class="form-control"
+                                                            name="paragraph"><%= paragraph %></textarea>
+                                                        <% }); %>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <% } else { %>
+                                            <p>No paragraphs available</p>
+                                            <% } %>
+
+                    </div> <!-- end col -->
+                </div> <!-- end row -->
+            </div> <!-- end card-body -->
+        </div> <!-- end card -->
+    </div> <!-- end col -->
+</div> <!-- end row -->

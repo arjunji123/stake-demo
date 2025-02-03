@@ -1,0 +1,33 @@
+.video-wrapper {
+  display: none;
+}
+
+.video-wrapper.active {
+  display: block;
+}
+
+.rtp-item .play-bar {
+  height: 5px;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.rtp-item .play-bar-progress {
+  width: 0%;
+  background-color: #00aaff;
+  transition: width 10s linear;
+}
+/* third.css */
+
+/* For the progress bar styling */
+.play-bar {
+  height: 4px; /* Adjust thickness of the bar */
+  background-color: #4b5563; /* Tailwind's grey-500 */
+  overflow: hidden;
+}
+
+.play-bar-progress {
+  height: 100%;
+  background-color: #3b82f6; /* Tailwind's blue-500 */
+  transition: width 0.1s ease-in-out; /* Smooth animation for progress */
+}
