@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar'
 import MainContent from './components/MainContent'
 import MobileNavbar from './components/MobileNavbar'
 import Footer from './components/Footer'
-import stakePreloader from './assets/stake-preloader.gif'
+// import stakePreloader from './assets/stake-preloader.gif'
 // Supports weights 100-900
 import '@fontsource-variable/montserrat'
 
@@ -36,17 +36,17 @@ const App = () => {
         setIsSidebarOpen(!isSidebarOpen)
     }
 
-    if (isLoading) {
-        return (
-            <div className="fixed top-0 left-0 flex justify-center items-center h-screen w-screen bg-grey-600">
-                <img
-                    src={stakePreloader}
-                    alt=""
-                    className="w-full max-w-[100px] touch-none"
-                />
-            </div>
-        )
-    }
+    // if (isLoading) {
+    //     return (
+    //         <div className="fixed top-0 left-0 flex justify-center items-center h-screen w-screen bg-grey-600">
+    //             <img
+    //                 src={stakePreloader}
+    //                 alt=""
+    //                 className="w-full max-w-[100px] touch-none"
+    //             />
+    //         </div>
+    //     )
+    // }
 
     return (
         <>
