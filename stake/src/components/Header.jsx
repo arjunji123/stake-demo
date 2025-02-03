@@ -43,7 +43,7 @@ const Header = ({}) => {
                 <button className="ml-4 px-3 py-2 rounded-md font-medium">
                     Sign in
                 </button>
-                <button className="bg-[#99FF37] px-4 py-2 rounded-sm text-white font-medium hover:bg-[#99FF37]">
+                <button className="bg-[#99FF37] px-4 py-2 rounded-sm text-black font-medium hover:bg-[#99FF37]">
                     Register
                 </button>
             </div>
