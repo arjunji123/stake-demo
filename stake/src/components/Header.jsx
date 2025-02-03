@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from '../assets/logo.jpg'
-const Header = ({ }) => {
+import logo from '../assets/logo.png'
+const Header = ({}) => {
     return (
         <header
             className="flex fixed top-0 w-full z-10 items-center bg-[#001236] p-2.5"
@@ -43,7 +43,7 @@ const Header = ({ }) => {
                 <button className="ml-4 px-3 py-2 rounded-md font-medium">
                     Sign in
                 </button>
-                <button className="bg-blue-500 px-4 py-2 rounded-sm text-white font-medium hover:bg-blue-600">
+                <button className="bg-yellow-500 px-4 py-2 rounded-sm text-white font-medium hover:bg-yellow-600">
                     Register
                 </button>
             </div>

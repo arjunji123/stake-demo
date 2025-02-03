@@ -20,7 +20,7 @@ const Banner = ({ data }) => {
                                     rounded-sm font-semibold whitespace-nowrap ring-offset-background 
                                     transition disabled:pointer-events-none disabled:opacity-50 
                                     focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 
-                                    active:scale-[0.98] bg-blue-500 text-white 
+                                    active:scale-[0.98] bg-yellow-500 text-black 
                                     betterhover:hover:bg-blue-600 betterhover:hover:text-white 
                                     focus-visible:outline-white text-sm leading-none shadow-md 
                                     py-[0.9375rem] px-[1.25rem] mt-5 lg:mt-8 md:mt-4 w-full md:w-auto"

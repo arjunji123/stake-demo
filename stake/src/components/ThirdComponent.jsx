@@ -8,8 +8,8 @@ import returnIcon from '../assets/rtp-icons/return-icon.svg'
 const RtpItem = ({ icon, title, description, progress, isActive }) => {
     return (
         <div
-            className={`rtp-item base-transition flex flex-row p-4 pb-5 rounded relative overflow-hidden max-lg:bg-grey-500 ${
-                isActive ? 'bg-grey-700' : 'bg-grey-800'
+            className={`rtp-item base-transition flex flex-row p-4 pb-5 rounded relative overflow-hidden max-lg:bg-[#000A1E] ${
+                isActive ? 'bg-[#000A1E]' : 'bg-[#000A1E]'
             }`}
         >
             <img src={icon} alt={`${title} icon`} className="max-w-[40px]" />

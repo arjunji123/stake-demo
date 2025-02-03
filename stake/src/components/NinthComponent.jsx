@@ -63,7 +63,7 @@ const SportsTable = ({ data }) => {
                 {data.map((entry, index) => (
                     <tr
                         key={index}
-                        className="odd:bg-grey-500 even:bg-grey-300 w-full"
+                        className="odd:bg-[#001236] even:bg-[#0a1b3d] w-full"
                     >
                         <td className="p-4 rounded-l-md text-left truncate overflow-hidden whitespace-nowrap max-w-[150px]">
                             {entry.event}
