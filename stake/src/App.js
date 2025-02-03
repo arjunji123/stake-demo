@@ -17,7 +17,7 @@ const App = () => {
         const fetchComponentData = async () => {
             try {
                 const response = await fetch(
-                    'http://localhost:4000/admin/api-services'
+                    'https://stake-demo.onrender.com/admin/api-services'
                 )
                 const componentData = await response.json()
                 console.log(componentData)
