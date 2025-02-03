@@ -11,7 +11,6 @@ import '@fontsource-variable/montserrat'
 const App = () => {
     const [data, setData] = useState('')
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
         const fetchComponentData = async () => {
@@ -24,8 +23,6 @@ const App = () => {
                 setData(componentData)
             } catch (error) {
                 console.log(error)
-            } finally {
-                setTimeout(() => setIsLoading(false), 500)
             }
         }
 
