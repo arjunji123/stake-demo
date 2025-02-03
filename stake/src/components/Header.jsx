@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.jpg'
-const Header = ({ toggleSidebar }) => {
+const Header = ({ }) => {
     return (
         <header
             className="flex fixed top-0 w-full z-10 items-center bg-[#001236] p-2.5"

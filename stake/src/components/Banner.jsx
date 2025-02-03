@@ -1,4 +1,4 @@
-import bannerBg from '../assets/stake.BFmdy97X.svg'
+// import bannerBg from '../assets/stake.BFmdy97X.svg'
 
 const Banner = ({ data }) => {
     return (

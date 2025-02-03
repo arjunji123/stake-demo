@@ -1,4 +1,4 @@
-import stakeBg from '../assets/stake.BFmdy97X.svg'
+// import stakeBg from '../assets/stake.BFmdy97X.svg'
 
 const SeventhComponent = ({ data }) => {
     console.log(data)
